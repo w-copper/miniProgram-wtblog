@@ -1,0 +1,23 @@
+<!--miniprogram/pages/blogUser/blogUser.wxml-->
+<view class="section">
+	<view class="user-profile">
+		<button class="user-avater"  size="default" style="background-image: url({{avatarUrl}})"></button>
+	</view>
+
+	<view class="blog blog-add">
+		<button class="blog-btn" bindtap="onNewBlog">新建文章</button>
+	</view>
+
+	<view class="blog blog-list">
+		<button class="blog-btn" bindtap="onUserList">我的发布</button>
+	</view>
+
+	<view class="blog">
+		<button class="blog-btn" bindtap="onCheckOld">草稿</button>
+	</view>
+
+  <view class="blog blog-mine">
+    <button class="blog-btn" bindtap="onUserSelf">个人日记</button>
+  </view>
+
+</view>

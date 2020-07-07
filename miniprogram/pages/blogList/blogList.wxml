@@ -1,0 +1,15 @@
+<!--miniprogram/pages/blogList/blogList.wxml-->
+<view>
+	<view class="userinfo">
+		<button open-type="getUserInfo" bindgetuserinfo="onGetUserInfo" class="userinfo-avatar" style="background-image: url({{avatarUrl}})" size="default"></button>
+		<input auto-focus class="search-input" placeholder="输入搜索内容" confirm-type="search" bindconfirm="onConfirm"></input>
+	</view>
+
+	<view class="blog-list">
+		<view wx:for="{{blogarr}}" wx:key="_id" class="blog-item">
+			<view style="flex-direction: row;" bindtap="onClickItem" data-item="{{item}}">
+			<span>{{item.title}}</span>
+			</view>
+		</view>
+	</view>
+</view>

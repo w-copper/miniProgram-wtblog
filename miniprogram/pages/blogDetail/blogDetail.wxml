@@ -1,0 +1,22 @@
+<!--miniprogram/pages/blogDetail/blogDetail.wxml-->
+<view class="section">
+  <view class="user-control">
+    <button wx:if="{{editAble}}" bindtap="onEdit">编辑</button>
+    <button wx:if="{{delAble}}" bindtap="onDel" >删除</button>
+  </view>
+
+  
+  <view class="blog-detail">
+    <view class="blog-title">{{title}}</view>
+    <view class="blog-info">
+       <view>{{userInfo}}</view>
+       <view>{{createTime}}</view>
+       <view>{{editTime}}</view>
+    </view>
+    <view class="blog-abs">
+      {{abstract}}
+    </view>
+    <view class="line"></view>
+    <rich-text nodes="{{blogHtml}}"></rich-text>
+  </view>
+</view>

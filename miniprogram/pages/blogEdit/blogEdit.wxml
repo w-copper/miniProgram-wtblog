@@ -1,0 +1,25 @@
+<!--miniprogram/pages/blogEdit/blogEdit.wxml-->
+
+<view class="section" wx:if="{{hasPer}}">
+	<view class="nav-view">
+		<button class="preview" bindtap="onPreview">{{preOrMark}}</button>
+		<button bindtap="onSaveNotDone">存草稿</button>
+	</view>
+	<view class="blog-editor">
+		<label>标题：<input placeholder="输入标题" class="blog-title" bindinput="onTitleChange" value="{{title}}"></input></label>
+		<span>摘要</span>
+		<textarea maxlength="150" placeholder="输入摘要" class="blog-abs" bindinput="onAbsChange" value="{{abstract}}"/>
+
+		<textarea class="edit-markdown" id="markdow" placeholder="输入文章内容" maxlength="-1" auto-focus wx:if="{{showMarkdown}}" bindinput="onMarkChange" value="{{markdownValue}}" />
+
+	</view>
+	<view id="preview" wx:if="{{showPreview}}" class="preview-view">
+		<rich-text nodes="{{htmlSnip}}"></rich-text>
+	</view>
+	是否公开：<switch checked="{{!myself}}" bindchange="onMyselfChange"/>
+	<button class="save" bindtap="onSave">发布</button>
+</view>
+
+<view wx:if="{{!hasPer}}">
+ 您没有编辑权限！请登陆后重试！
+</view>

@@ -1,0 +1,60 @@
+/* miniprogram/pages/blogEdit/blogEdit.wxss */
+.section {
+  flex-direction: column;
+  display: flex;
+  background: #f6f6f6;
+  justify-content: flex-start;
+  align-items: center;
+}
+.nav-view {
+  flex-direction: row;
+  height: 70rpx;
+  width: 100%;
+  display: flex;
+  background: rgb(255, 255, 255);
+}
+
+.preview {
+  width: 50rpx;
+  height: 50rpx;
+  margin: 0;
+  padding-left: 2rpx;
+  padding-bottom: 5rpx;
+  padding-right: 10rpx;
+}
+
+.blog-editor {
+  width: 95%;
+  align-items: center;
+  position: relative;
+  margin-top: 5rpx;
+  margin-left: 5rpx;
+  margin-right: 5rpx;
+}
+
+textarea {
+  padding: 5rpx 10rpx 0rpx 10rpx;
+}
+
+.edit-markdown {
+  position: relative;
+  height: 85vh;
+  width: 95%;
+  margin: 10rpx 10rpx 20rpx 10rpx;
+  background: rgb(255, 255, 255);
+}
+
+.preview-view {
+  align-items: left;
+  position: relative;
+  margin: 10rpx 10rpx 20rpx 10rpx;
+}
+
+.blog-title, .blog-abs {
+  align-items: left;
+  width: 95%;
+  margin: 10rpx 10rpx 20rpx 10rpx;
+  position: relative;
+  background: white;
+}
+

@@ -1,0 +1,39 @@
+/* miniprogram/pages/blogUser/blogUser.wxss */
+
+page {
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.user-profile {
+  margin-top: 5rpx;
+  height: 150rpx;
+  width: 100%;
+  padding: 0;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-left: none;
+  border-right: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: all 300ms ease;
+}
+
+.user-avater {
+  /* padding-right: 30rpx;
+  padding-left: -20rpx; */
+  /* border: 1px solid; */
+  width:100rpx;
+  height:100rpx;
+  margin: 0rpx;
+  border-radius: 50%;
+  background-size: cover;
+  background-color: white;
+}
+.user-avater[size] {
+  width: 110rpx;
+  height: 110rpx;
+}
